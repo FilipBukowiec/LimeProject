@@ -1,24 +1,41 @@
-import logo from "../../assets/img/lime.png";
-import facebook from "../../assets/img/facebook.png";
-import instagram from "../../assets/img/instagram.png";
-import twitter from "../../assets/img/twitter.png";
+import AuthWrapper from "./Layout";
 
 export default function Registery() {
   return (
-    <div className={"w-full flex items-center justify-center p-16"}>
-      <div
-        className={
-          "min-h-[600px] max-w-[400px] p-8 gap-4 bg-emerald-50 rounded-2xl flex-col flex shadow-xl "
-        }
-      >
-        <div className={`h-[250px]  flex justify-center items-center`}>
-          <img
-            alt={"lime logo"}
-            src={logo}
-            className={"w-1/2 border-b-2 border-lime-900"}
-          />
-        </div>
+    <AuthWrapper>
+      <div className={"flex items-center flex-col gap-y-2.5 "}>
+        <input
+          className={
+            "p-2 w-full placeholder-lime-400 text-xl bg-transparent border-lime-300 border-2 rounded-lg"
+          }
+          name="login"
+          type="text"
+          placeholder="login"
+        />
+        <input
+          className={
+            "p-2 w-full placeholder-lime-400 text-xl bg-transparent border-lime-300 border-2 rounded-lg"
+          }
+          name="password"
+          type="password"
+          placeholder="password"
+        />
+        <input
+          className={
+            "p-2 w-full placeholder-lime-400 text-xl bg-transparent border-lime-300 border-2 rounded-lg"
+          }
+          name="cpassword"
+          type="password"
+          placeholder="confirm password"
+        />
+        <button
+          className={
+            "px-4 py-2 w-full  text-xl bg-lime-400 rounded-lg text-emerald-500 gap-1 hover:text-white transition-colors duration-400"
+          }
+        >
+          Register
+        </button>
       </div>
-    </div>
+    </AuthWrapper>
   );
 }

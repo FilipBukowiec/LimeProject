@@ -1,5 +1,7 @@
-const btnProduct = () => {
-  console.log("product");
+import { productsDummyData } from "../../dummy/productsDummyData";
+
+const Wrapper = () => {
+  return <div></div>;
 };
 
-export default btnProduct;
+export default Wrapper;
